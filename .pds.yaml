@@ -1,0 +1,14 @@
+apiVersion: pds/v1alpha1
+kind: Component
+metadata:
+  id: tmux-config
+  name: Tmux Config
+spec:
+  type: software-config
+  domain: personal-config
+  lifecycle: active
+  repository:
+    url: https://github.com/BakerSean168/tmux-config.git
+    visibility: private
+  provides:
+    - pds://personal-config/config/tmux
