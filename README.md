@@ -7,7 +7,7 @@ This repository owns Tmux behavior and plugins. Host selection/composition belon
 ## Install directly
 
 ```bash
-git clone git@github.com:BakerSean168/tmux-config.git ~/.config/tmux-config
+git clone https://github.com/BakerSean168/tmux-config.git ~/.config/tmux-config
 ~/.config/tmux-config/install.sh
 ```
 
@@ -21,3 +21,13 @@ git pull --ff-only
 ```
 
 Then reload Tmux with `prefix + r` or start a new server.
+
+## What is included
+
+- `Ctrl+a` prefix, `|` / `-` panes and mouse support.
+- `tmux-sensible` and `tmux-resurrect` via TPM (installed by `install.sh`).
+- Reload config using `prefix + r`.
+
+Tmux, Git and a compatible shell must be installed separately. The installer
+backs up an existing `~/.tmux.conf`; host-specific preferences remain on
+the local machine. Licensed under [MIT](LICENSE).
